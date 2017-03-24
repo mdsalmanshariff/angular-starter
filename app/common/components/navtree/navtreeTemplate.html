@@ -1,0 +1,5 @@
+{{arr.name}}
+<!-- <navtree array="arr.l2"></navtree> -->
+<ul>
+  <li ng-repeat="arr in arr.l2" ng-include="'app/common/components/navtree/navtreeTemplate.html'" ng-click="test(arr);$event.stopPropogation();"></li>
+</ul>

@@ -1,14 +1,26 @@
 <!doctype html>
-<html lang="en" ng-app="mymodule">
+<html lang="en" ng-app="APP">
   <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
-    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <!-- <script src="bundle-min.js"></script> -->
     <script src="app/app.js"></script>
+    <script src="app/newapp.js"></script>
+    <script src="app/common/components/tree/tree.directive.js"></script>
+    <script src="app/common/components/navtree/navtree.directive.js"></script>
+    <link rel="stylesheet" href="app/app.css">
+      <!-- <link rel="stylesheet" href="app.css"> -->
   </head>
-  <body ng-controller="mycontroller">
+  <body>
+    <!-- <div ng-controller="IndexCtrl">
 
-    <p>Nothing here {{'yet' + '!'}} {{data}}</p>
+			<collection collection='level1'></collection>
+		</div> -->
+    <div ng-controller="IndexCtrl">
+<tree list="list"></tree>
+<!-- <navtree array ="array"></navtree> -->
+      </div>
 
   </body>
 </html>

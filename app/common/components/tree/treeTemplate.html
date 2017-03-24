@@ -1,0 +1,8 @@
+<div ng-if="li.show" style="color: red;" ng-click="test(li)">
+  {{li.name}}
+</div>
+<button type="button" name="button"  ng-click="create(li)" ng-if="li.type && li.show">create</button>
+<button type="button" name="button" ng-click="delete(li)" ng-if="li.show">delete</button>
+<ul ng-hide="!li.bool">
+  <li  style="color: red;" ng-repeat="li in li.nodes" ng-include="'app/common/components/tree/treeTemplate.html'" ng-if="li.show"></li>
+</ul>
