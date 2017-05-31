@@ -5,7 +5,7 @@ angular.module('APP')
     scope: {
       array: '='
     },
-    templateUrl: 'app/common/components/navtree/navtree.html',
+    templateUrl: 'common/components/navtree/navtree.html',
   controller: function($scope) {
     $scope.test =function(arr) {
       arr.l2 = [

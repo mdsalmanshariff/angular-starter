@@ -47,7 +47,10 @@ angular.module('APP', [])
 	}
 })
 
-.controller('IndexCtrl', ['$scope', function ($scope) {
+.controller('IndexCtrl', ['$scope', '$filter', function ($scope, $filter) {
+	var tomorrow = new Date();
+	tomorrow.setDate(tomorrow.getDate() + 1);
+		console.log($filter('date')(tomorrow));
 	$scope.level1 =
 	[
 		{

@@ -7,7 +7,7 @@
       scope: {
         list : '='
       },
-      templateUrl: "app/common/components/tree/tree.html",
+      templateUrl: "common/components/tree/tree.html",
       controller: ['$scope',function($scope) {
 
 
